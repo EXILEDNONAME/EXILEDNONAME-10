@@ -38,8 +38,8 @@
             </div>
           </div>
         </div>
-        <div class="menu-item">
-          <a href="#" class="menu-link">
+        <div class="menu-item {{ (request()->is('dashboard/files*')) ? 'active' : '' }}">
+          <a href="/dashboard/files" class="menu-link">
             <div class="menu-icon">
               <i class="fa fa-hdd"></i>
             </div>
@@ -48,22 +48,21 @@
         </div>
 
         <div class="menu-header"> Main </div>
-        <div class="menu-item has-sub">
+        <div class="menu-item has-sub {{ (request()->is('dashboard/applications/datatables*')) ? 'active' : '' }}">
           <a href="#" class="menu-link">
-            <div class="menu-icon">
-              <i class="fab fa-microsoft"></i>							</div>
-              <div class="menu-text"> Datatables </div>
-              <div class="menu-caret"></div>
-            </a>
-            <div class="menu-submenu">
-              <div class="menu-item">
-                <a href="index.html" class="menu-link"><div class="menu-text"> Generals </div></a>
-              </div>
-              <div class="menu-item">
-                <a href="index_v2.html" class="menu-link"><div class="menu-text"> Relations </div></a>
-              </div>
+            <div class="menu-icon"><i class="fab fa-microsoft"></i></div>
+            <div class="menu-text"> Datatables </div>
+            <div class="menu-caret"></div>
+          </a>
+          <div class="menu-submenu">
+            <div class="menu-item {{ (request()->is('dashboard/applications/datatables/generals*')) ? 'active' : '' }}">
+              <a href="/dashboard/applications/datatables/generals" class="menu-link"><div class="menu-text"> Generals </div></a>
+            </div>
+            <div class="menu-item">
+              <a href="index_v2.html" class="menu-link"><div class="menu-text"> Relations </div></a>
             </div>
           </div>
+        </div>
 
         <div class="menu-header"> Settings </div>
 

@@ -20,20 +20,7 @@
 <div class="panel panel-inverse">
   <div class="panel-heading">
     <h4 class="panel-title"> Create </h4>
-    <!-- <div class="btn-group my-n1">
-    <button type="button" class="btn btn-success btn-xs">Action</button>
-    <button type="button" class="btn btn-success btn-xs dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><b class="caret"></b></button>
-    <div class="dropdown-menu dropdown-menu-end" style="">
-    <a href="javascript:;" class="dropdown-item">Action</a>
-    <a href="javascript:;" class="dropdown-item">Another action</a>
-    <a href="javascript:;" class="dropdown-item">Something else here</a>
-    <div class="dropdown-divider"></div>
-    <a href="javascript:;" class="dropdown-item">Separated link</a>
-    </div>
-    </div> -->
     <div class="panel-heading-btn">
-      <!-- <a href="javascript:;" data-toggle="panel-expand"><i class="fa fa-expand"></i></a>
-      <a href="javascript:;" class="text-white" data-toggle="panel-reload"><i class="fa fa-sync"></i></a> -->
       <a href="javascript:;" class="btn btn-xs btn-icon btn-white" data-toggle="panel-collapse"><i class="fas fa-caret-down"></i></a>
     </div>
   </div>
@@ -50,6 +37,13 @@
         <input type="email" class="form-control mb-5px" placeholder="Description">
       </div>
     </div>
+    <div class="row mb-15px">
+      <label class="form-label col-form-label col-md-3"> Description </label>
+      <div class="col-md-9">
+        <a href="{{ URL::Current() }}/../#"><button type="button" class="btn btn-dark"> Submit </button></a>
+      </div>
+    </div>
+
   </div>
 </div>
 @endsection
