@@ -212,8 +212,8 @@
 			{
 				data: 'active', orderable: true, 'className': 'align-middle text-center', width: '1',
 				render: function ( data, type, row ) {
-					if ( data == 0 ) { return '<label href="javascript:void(0);" class="text-decoration: none" id="active" title="Switch To Active" data-id="' + row.id + '"><label class="badge bg-dark"> No </label></label>'; }
-					if ( data == 1 ) { return '<label href="javascript:void(0);" class="text-decoration: none" id="inactive" title="Switch To Inactive" data-id="' + row.id + '"><label class="badge bg-indigo"> Yes </label></label>'; }
+					if ( data == 0 ) { return '<label href="javascript:void(0);" data-toggle="panel-reload" data-tooltip-init="true" class="text-decoration: none" id="active" title="Switch To Active" data-id="' + row.id + '"><label class="badge bg-dark"> No </label></label>'; }
+					if ( data == 1 ) { return '<label href="javascript:void(0);" data-toggle="panel-reload" data-tooltip-init="true" class="text-decoration: none" id="inactive" title="Switch To Inactive" data-id="' + row.id + '"><label class="badge bg-indigo"> Yes </label></label>'; }
 				}
 			},
 			@endif
