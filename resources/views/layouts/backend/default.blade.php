@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" >
+<html lang="en">
   @include('layouts.backend.__includes.head')
 
   <body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed aside-minimize-hoverable page-loading">
@@ -14,14 +14,14 @@
             @include('layouts.backend.__includes.breadcrumb')
 
             <div class="d-flex flex-column-fluid">
-              <div class=" container-fluid ">
-                <!-- CONTENT HERE -->
+              <div class="container-fluid">
+                @yield('content')
               </div>
             </div>
           </div>
 
           @include('layouts.backend.__includes.footer')
-          
+
         </div>
       </div>
     </div>
