@@ -1,4 +1,5 @@
-<head><base href="../../">
+<head>
+  <base href="../../">
   <meta charset="utf-8"/>
   <title>Metronic | Fixed Content</title>
   <meta name="description" content="Content width content"/>

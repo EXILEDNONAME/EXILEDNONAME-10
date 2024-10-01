@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   @include('layouts.backend.__includes.head')
 
   <body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed aside-minimize-hoverable page-loading">
@@ -26,8 +26,8 @@
       </div>
     </div>
 
-    @include('layouts.backend.__includes.component.user-panel')
-    @include('layouts.backend.__includes.component.quick-cart')
+    <!-- @!include('layouts.backend.__includes.component.user-panel') -->
+    <!-- @!include('layouts.backend.__includes.component.quick-cart') -->
     @include('layouts.backend.__includes.component.quick-panel')
     @include('layouts.backend.__includes.component.chat-panel')
     @include('layouts.backend.__includes.component.scroll-top')
