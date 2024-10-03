@@ -34,7 +34,7 @@ Route::get('dashboard/logout', [App\Http\Controllers\Backend\DashboardController
 // DATATABLES - GENERALS
 Route::group([
   'as' => 'dashboard.application.datatable.',
-  'prefix' => 'dashboard/applications/datatables',
+  'prefix' => 'dashboard/applications/datatables/generals',
   'namespace' => 'App\Http\Controllers\Backend\__Application\Datatable',
   'middleware' => 'auth',
 ], function () {

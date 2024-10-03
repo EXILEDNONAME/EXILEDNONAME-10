@@ -24,12 +24,11 @@
 
         <li class="menu-item {{ (request()->is('dashboard')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard') }}" class="menu-link"><i class="menu-icon fas fa-desktop"></i><span class="menu-text"> Dashboard </span></a></li>
 
-        <li class="menu-item" aria-haspopup="true">
-          <a href="/dashboard/datatables/generals" class="menu-link">
-            <i class="menu-icon fas fa-list-ul"></i>
-            <span class="menu-text"> Datatables </span>
-          </a>
+        <li class="menu-section">
+          <h4 class="menu-text"> APPLICATIONS </h4>
+          <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
         </li>
+        <li class="menu-item {{ (request()->is('dashboard/applications/datatables*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/applications/datatables') }}" class="menu-link "><i class="menu-icon fas fa-list-ul"></i><span class="menu-text"> Datatables </span></a></li>
 
         <li class="menu-section">
           <h4 class="menu-text"> ADMINISTRATIVES </h4>

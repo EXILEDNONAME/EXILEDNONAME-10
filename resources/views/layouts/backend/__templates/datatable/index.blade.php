@@ -124,8 +124,6 @@
     </div>
   </div>
 </div>
-
-@include('layouts.backend.__includes.extension')
 @endsection
 
 @push('js')
