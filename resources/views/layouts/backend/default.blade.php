@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   @include('layouts.backend.__includes.head')
 
@@ -28,8 +27,8 @@
 
     <!-- @!include('layouts.backend.__includes.component.user-panel') -->
     <!-- @!include('layouts.backend.__includes.component.quick-cart') -->
-    @include('layouts.backend.__includes.component.quick-panel')
-    @include('layouts.backend.__includes.component.chat-panel')
+    <!-- @!include('layouts.backend.__includes.component.quick-panel') -->
+    <!-- @!include('layouts.backend.__includes.component.chat-panel') -->
     @include('layouts.backend.__includes.component.scroll-top')
     @include('layouts.backend.__includes.component.sticky-toolbar')
     @include('layouts.backend.__includes.component.demo-panel')
