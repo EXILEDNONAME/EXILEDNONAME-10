@@ -32,14 +32,6 @@
           {{ method_field('PATCH') }}
           {{ csrf_field() }}
 
-          <div class="form-group row">
-            <label class="col-lg-3 col-form-label"> Application Name </label>
-            <div class="col-lg-9">
-              {{ Html::text('application_name', (isset($data->application_name) ? $data->application_name : ''))->class([ $errors->has('application_name ') ? 'form-control is-invalid' : 'form-control'])->required() }}
-              @error('application_name') <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span> @enderror
-            </div>
-          </div>
-
         </form>
       </div>
 

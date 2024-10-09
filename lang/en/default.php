@@ -52,6 +52,7 @@ return [
     'logout-session'                => 'Logout This Session',
     'main'                          => 'Main',
     'no'                            => 'No',
+    'optimizations'                 => 'Optimizations',
     'please-wait'                   => 'Please Wait',
     'print'                         => 'Print',
     'processing'                    => 'Processing',
@@ -115,6 +116,7 @@ return [
       'setting-updated'             => 'Successfully Update Settings',
       'password-changed'            => 'Password has been Changed',
       'profile-updated'             => 'Successfully Update Profile',
+      'optimized'                   => 'Successfully Optimized System',
     ],
 
     'error' => [

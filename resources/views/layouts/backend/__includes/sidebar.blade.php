@@ -50,6 +50,21 @@
           </div>
         </li>
 
+        <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/administratives/managements*')) ? 'menu-item-open' : '' }}">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <i class="menu-icon fas fa-user-shield"></i>
+            <span class="menu-text"> Managements </span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="menu-submenu">
+            <ul class="menu-subnav">
+              <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/administratives/managements/permissions*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/administratives/managements/permissions') }}" class="menu-link"><span class="menu-text"><i class="menu-bullet menu-bullet-dot"><span></span></i> Permissions </span></a></li>
+              <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/administratives/managements/roles*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/administratives/managements/roles') }}" class="menu-link"><span class="menu-text"><i class="menu-bullet menu-bullet-dot"><span></span></i> Roles </span></a></li>
+              <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/administratives/managements/users*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/administratives/managements/users') }}" class="menu-link"><span class="menu-text"><i class="menu-bullet menu-bullet-dot"><span></span></i> Users </span></a></li>
+            </ul>
+          </div>
+        </li>
+
       </ul>
     </div>
   </div>
