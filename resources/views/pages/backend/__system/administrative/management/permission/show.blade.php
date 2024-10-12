@@ -3,11 +3,11 @@
 
 @push('content')
 <tr>
-  <td class="align-middle font-weight-bold"> Name </td>
-  <td class="align-middle"> {!! $data->name !!} </td>
+  <td class="align-middle font-weight-bold"> Role </td>
+  <td class="align-middle"> {!! $data->role_id !!} </td>
 </tr>
 <tr>
-  <td class="align-middle font-weight-bold"> Guard Name </td>
-  <td class="align-middle"> {!! $data->guard_name !!} </td>
+  <td class="align-middle font-weight-bold"> ID </td>
+  <td class="align-middle"> {!! $data->model_id !!} </td>
 </tr>
 @endpush
