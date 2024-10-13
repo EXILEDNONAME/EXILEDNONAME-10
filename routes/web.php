@@ -129,3 +129,14 @@ Route::group([
   Route::get('selected-restore', 'UserController@selected_restore')->name('selected-restore');
   Route::resource('/', 'UserController')->parameters(['' => 'id']);
 });
+
+// ADMINISTRATIVE - SESSIONS
+Route::group([
+  'as' => 'dashboard.system.administrative.sessions.',
+  'prefix' => 'dashboard/administratives/sessions',
+  'namespace' => 'App\Http\Controllers\Backend\__System\Administrative',
+  'middleware' => 'auth',
+], function () {
+  Route::get('reset', 'SessionController@reset')->name('reset');
+  Route::get('/', 'SessionController@index');
+});

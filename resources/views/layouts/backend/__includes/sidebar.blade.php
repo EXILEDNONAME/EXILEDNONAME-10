@@ -16,6 +16,7 @@
       <ul class="menu-nav">
 
         <li class="menu-item {{ (request()->is('dashboard')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard') }}" class="menu-link"><i class="menu-icon fas fa-desktop"></i><span class="menu-text"> Dashboard </span></a></li>
+        <li class="menu-item {{ (request()->is('dashboard/file-manager*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/file-manager') }}" class="menu-link"><i class="menu-icon fas fa-hdd"></i><span class="menu-text"> File Manager </span></a></li>
 
         <li class="menu-section">
           <h4 class="menu-text"> APPLICATIONS </h4>
@@ -69,6 +70,7 @@
             </ul>
           </div>
         </li>
+        <li class="menu-item {{ (request()->is('dashboard/administratives/sessions*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/administratives/sessions') }}" class="menu-link "><i class="menu-icon fas fa-clock"></i><span class="menu-text"> Sessions </span></a></li>
 
       </ul>
     </div>
