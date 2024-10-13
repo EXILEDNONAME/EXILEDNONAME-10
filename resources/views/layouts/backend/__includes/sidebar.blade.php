@@ -71,7 +71,7 @@
           </div>
         </li>
         <li class="menu-item {{ (request()->is('dashboard/administratives/sessions*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/administratives/sessions') }}" class="menu-link "><i class="menu-icon fas fa-clock"></i><span class="menu-text"> Sessions </span></a></li>
-
+        <li class="menu-item {{ (request()->is('dashboard/administratives/statistics*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/administratives/statistics') }}" class="menu-link "><i class="menu-icon fas fa-bug"></i><span class="menu-text"> Statistics </span></a></li>
       </ul>
     </div>
   </div>
