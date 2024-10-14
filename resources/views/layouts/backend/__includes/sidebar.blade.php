@@ -37,6 +37,25 @@
         </li>
 
         <li class="menu-section">
+          <h4 class="menu-text"> SETTINGS </h4>
+          <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
+        </li>
+        <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/settings/profiles*')) ? 'menu-item-open' : '' }}">
+          <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <i class="menu-icon fas fa-user-tie"></i>
+            <span class="menu-text"> Profiles </span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="menu-submenu">
+            <ul class="menu-subnav">
+              <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/settings/profiles/account-informations*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/settings/profiles/account-informations') }}" class="menu-link"><span class="menu-text"><i class="menu-bullet menu-bullet-dot"><span></span></i> Account Informations </span></a></li>
+              <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/settings/profiles/change-password*')) ? 'menu-item-active' : '' }}"><a href="{{ url('/dashboard/settings/profiles/change-password') }}" class="menu-link"><span class="menu-text"><i class="menu-bullet menu-bullet-dot"><span></span></i> Change Password </span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item"><a class="menu-link" id="logout"><i class="menu-icon fas fa-sign-out-alt"></i><span class="menu-text"> {{ __('default.label.logout') }} </span></a></li>
+
+        <li class="menu-section">
           <h4 class="menu-text"> ADMINISTRATIVES </h4>
           <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
         </li>
