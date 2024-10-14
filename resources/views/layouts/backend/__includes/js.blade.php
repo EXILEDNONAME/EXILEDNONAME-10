@@ -11,6 +11,34 @@
 @stack('js')
 
 <script>
+$("#logout").click(function(e) {
+  Swal.fire({
+    title: "{{ __('default.notification.confirm.are-you-sure') }}?",
+    text: "{{ __('default.label.logout-session') }}",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonText: "Yes",
+    cancelButtonText: "No",
+    reverseButtons: false
+  }).then(function(result) {
+    if (result.value) {
+      Swal.fire({
+        text: "{{ __('default.label.redirect-login') }}",
+        timer: 2000,
+        onOpen: function() {
+          Swal.showLoading()
+        }
+      }).then(function(result) {
+        if (result.dismiss === "timer") {
+          window.location = "{{ url('/dashboard/logout') }}";
+        }
+      })
+    }
+  });
+});
+</script>
+
+<script>
 $("#logout_topbar").click(function(e) {
   Swal.fire({
     title: "{{ __('default.notification.confirm.are-you-sure') }}?",
