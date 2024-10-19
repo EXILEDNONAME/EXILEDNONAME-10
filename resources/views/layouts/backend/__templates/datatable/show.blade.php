@@ -48,7 +48,13 @@
               @if (empty($status) || $status == 'true')
               <tr>
                 <td class="align-middle font-weight-bold"> Status </td>
-                <td class="align-middle"> {{ $data->status }} </td>
+                <td class="align-middle">
+                  @if ( $data->status == 1 )
+                  <span class="label label-info label-inline"> {{ __('default.label.yes') }} </span>
+                  @else
+                  <span class="label label-dark label-inline"> {{ __('default.label.no') }} </span>
+                  @endif
+                </td>
               </tr>
               @endif
 
